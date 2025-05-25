@@ -214,6 +214,11 @@ namespace BugTests
                     bug.Resolve();
                     bug.Verify();
                     break;
+                case Bug.State.Resolved: 
+                    bug.Assign();
+                    bug.Test();
+                    bug.Resolve();
+                    break;
             }
         }
     }
